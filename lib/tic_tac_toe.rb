@@ -36,8 +36,8 @@ end
 
 #-------------------------------------------------------------------
 
-def position_taken?(board, guess)
-  if (board[guess] == "" || board[guess] == " " || board[guess] == nil)
+def position_taken?(board, index)
+  if (board[index] == "" || board[index] == " " || board[index] == nil)
     return false
   else
     return true
