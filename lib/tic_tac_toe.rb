@@ -57,7 +57,6 @@ end
 #-------------------------------------------------------------------
 
 def turn(board)
-  puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
@@ -127,9 +126,9 @@ end
 
 def play(board)
   while over(board) == false
+    puts "Please enter 1-9:"
     turn(board)
   end
-
   if won?(board) == true
     puts "Congratulations #{winner(board)}!"
   else
