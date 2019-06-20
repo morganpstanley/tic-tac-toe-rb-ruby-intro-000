@@ -128,7 +128,6 @@ def play(board)
   while over?(board) == false
     puts "Please enter 1-9:"
     turn(board)
-    over?(board)
   end
   if won?(board) == true
     puts "Congratulations #{winner(board)}!"
