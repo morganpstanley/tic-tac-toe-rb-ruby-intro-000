@@ -133,7 +133,7 @@ def play(board)
     puts "Please enter 1-9:"
     turn(board)
   end
-  if won?(board) == true
+  if won?(board)
     puts "Congratulations #{winner(board)}!"
   else
     puts "Cat's Game!"
