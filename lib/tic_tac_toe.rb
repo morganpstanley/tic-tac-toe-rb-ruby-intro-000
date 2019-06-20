@@ -111,7 +111,10 @@ end
 #-------------------------------------------------------------------
 
 def over?(board)
-  won?(board) || full?(board)
+  if won?(board) || full?(board) == true
+    return true
+  else
+    return false
 end
 
 #-------------------------------------------------------------------
