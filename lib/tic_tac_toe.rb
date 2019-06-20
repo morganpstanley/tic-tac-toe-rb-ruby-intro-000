@@ -125,7 +125,7 @@ end
 #-------------------------------------------------------------------
 
 def play(board)
-  while over?(board) == false
+  while turn_count(board) < 10
     puts "Please enter 1-9:"
     turn(board)
   end
