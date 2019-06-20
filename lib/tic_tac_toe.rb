@@ -29,7 +29,6 @@ end
 
 def move(board, index, token)
   board[index] = token
-  return board
 end
 
 #-------------------------------------------------------------------
