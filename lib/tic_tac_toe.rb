@@ -129,7 +129,7 @@ end
 #-------------------------------------------------------------------
 
 def play(board)
-  until over?() == true
+  until over?(board) == true
     puts "Please enter 1-9:"
     turn(board)
   end
