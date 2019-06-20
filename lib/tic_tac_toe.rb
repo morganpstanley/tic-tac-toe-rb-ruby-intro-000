@@ -29,7 +29,7 @@ end
 
 #-------------------------------------------------------------------
 
-def move(board, index, character = "X")
+def move(board, index, character)
   board[index] = character
   return board
 end
