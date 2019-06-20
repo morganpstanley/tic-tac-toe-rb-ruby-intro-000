@@ -55,7 +55,7 @@ end
 
 def turn(board)
   puts "Please choose a number 1-9:"
-  input = gets.strip
+  user_input = gets.strip
   index = input_to_index(user_input)
   if valid_move?(board, index)
     token = current_player(board)
