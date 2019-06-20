@@ -129,9 +129,10 @@ end
 #-------------------------------------------------------------------
 
 def play(board)
-  until over?(board) == true
+  loop do
     puts "Please enter 1-9:"
     turn(board)
+  while over?(board) = false
   end
   if won?(board) == true
     puts "Congratulations #{winner(board)}!"
